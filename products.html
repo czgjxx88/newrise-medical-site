@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products – Newrise Medical | Disposable Medical & Healthcare Supplies</title>
+  <meta name="description" content="Browse our full range of disposable medical and healthcare products: nursing care supplies, medical blankets, infection control, patient transfer, and more.">
+  <meta name="keywords" content="disposable medical products, nursing care supplies, medical blankets, infection control products, patient transfer sheets, washable gloves, face masks, isolation gowns">
+  <link rel="canonical" href="https://www.newrisemedical.com/products.html">
+  <meta property="og:title" content="Products – Newrise Medical | Full Range of Disposable Medical Supplies">
+  <meta property="og:description" content="Browse our full range of disposable medical and healthcare products: nursing care supplies, medical blankets, infection control, patient transfer, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.newrisemedical.com/assets/images/banner-hero.jpg">
+  <meta property="og:site_name" content="Newrise Medical">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Products – Newrise Medical | Full Range of Disposable Medical Supplies">
+  <meta name="twitter:description" content="Browse our full range of disposable medical and healthcare products: nursing care supplies, medical blankets, infection control, patient transfer, and more.">
+  <meta name="twitter:image" content="https://www.newrisemedical.com/assets/images/banner-hero.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=12">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Newrise Medical" style="height:44px;width:auto;">
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <div class="nav-dropdown">
+  <a href="products.html" class="nav-dropdown-toggle active">Products <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4z"/></svg></a>
+  <div class="dropdown-menu">    <a href="landing-pages/landing-incontinence-care.html">Incontinence Care</a>
+    <a href="landing-pages/landing-medical-blankets.html">Medical Blankets</a>
+    <a href="landing-pages/landing-infection-control.html">Infection Control</a>
+    <a href="landing-pages/landing-patient-transfer.html">Patient Transfer</a>
+    <a href="landing-pages/landing-oem-odm.html">OEM / ODM</a>
+  </div>
+</div>
+          <a href="news.html">News</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <button class="search-btn" id="searchBtn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Get Quote</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Search overlay -->
+    <div class="search-overlay" id="searchOverlay" style="display:none;">
+      <div class="search-container">
+        <form class="search-form" action="#" method="get">
+          <input type="search" placeholder="Search products, news, pages..." class="search-input">
+          <button type="submit" class="search-submit">Search</button>
+          <button type="button" class="search-close" id="searchClose">&times;</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Products</h1>
+      <p>Comprehensive range of disposable medical and healthcare supplies for hospitals, clinics, and home care.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> &raquo; Products
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCT FILTER ========== -->
+  <section class="section" style="padding-bottom: 0;">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-category="all">All Products</button>
+        <button class="filter-btn" data-category="nursing-care">Nursing Care</button>
+        <button class="filter-btn" data-category="medical-blankets">Medical Blankets</button>
+        <button class="filter-btn" data-category="infection-control">Infection Control</button>
+        <button class="filter-btn" data-category="patient-transfer">Patient Transfer</button>
+        <button class="filter-btn" data-category="others">Others</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCT GRID ========== -->
+  <section class="section" style="padding-top: 40px;">
+    <div class="container">
+      <div class="products-grid" id="productsGrid">
+
+        <!-- ===== Nursing Care ===== -->
+        <div class="product-card" data-category="nursing-care">
+          <div class="product-image">
+            <img src="assets/images/commode-liner.jpg" loading="lazy" alt="Commode Liner">
+          </div>
+          <div class="product-info">
+            <h3>Commode Liner</h3>
+            <p>Disposable liner for bedside commodes. Ultra-absorbent, leak-proof, hygienic solution for patient care.</p>
+            <a href="products/commode-liner.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="nursing-care">
+          <div class="product-image">
+            <img src="assets/images/bedpan-liner.jpg" loading="lazy" alt="Bedpan Liner">
+          </div>
+          <div class="product-info">
+            <h3>Bedpan Liner</h3>
+            <p>Disposable bedpan liner with absorbent core. Provides comfort and hygiene, reduces cleaning time for staff.</p>
+            <a href="products/bedpan-liner.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="nursing-care">
+          <div class="product-image">
+            <img src="assets/images/male-urinal-bag.jpg" loading="lazy" alt="Male Urinal Bag">
+          </div>
+          <div class="product-info">
+            <h3>Male Urinal Bag</h3>
+            <p>Disposable male urinal bag with anti-odor technology. Lightweight, leak-proof, and convenient for bedside use.</p>
+            <a href="products/male-urinal-bag.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="nursing-care">
+          <div class="product-image">
+            <img src="assets/images/vomit-bag.jpg" loading="lazy" alt="Vomit Bag">
+          </div>
+          <div class="product-info">
+            <h3>Vomit Bag</h3>
+            <p>Disposable emesis bag with solidifying powder. Instantly gels liquid waste, ideal for ambulances and hospitals.</p>
+            <a href="products/vomit-bag.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="nursing-care">
+          <div class="product-image">
+            <img src="assets/images/medibag.jpg" loading="lazy" alt="MEDIBAG Bolsas Higiénicas Absorbentes">
+          </div>
+          <div class="product-info">
+            <h3>MEDIBAG Bolsas Higiénicas Absorbentes</h3>
+            <p>Absorbent hygiene bags for medical waste. Super-absorbent polymer core, multilingual packaging for global markets.</p>
+            <a href="products/medibag-bolsas-higinicas-absorbentes.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- ===== Patient Transfer ===== -->
+        <div class="product-card" data-category="patient-transfer">
+          <div class="product-image">
+            <img src="assets/images/patient-slide-sheet.jpg" loading="lazy" alt="Patient Slide Sheet">
+          </div>
+          <div class="product-info">
+            <h3>Patient Slide Sheet</h3>
+            <p>Low-friction slide sheet for patient repositioning. Reduces caregiver strain and prevents skin shear injuries.</p>
+            <a href="products/patient-slide-sheet.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="patient-transfer">
+          <div class="product-image">
+            <img src="assets/images/patient-transfer-sheet.jpg" loading="lazy" alt="Patient Transfer Sheet">
+          </div>
+          <div class="product-info">
+            <h3>Patient Transfer Sheet</h3>
+            <p>Smooth, low-friction transfer sheet for safe patient repositioning. Reduces caregiver strain and patient discomfort.</p>
+            <a href="products/patient-transfer-sheet.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- ===== Medical Blankets ===== -->
+        <div class="product-card" data-category="medical-blankets">
+          <div class="product-image">
+            <img src="assets/images/needle-punched-blanket.jpg" loading="lazy" alt="Needle Punched Nonwoven Blanket">
+          </div>
+          <div class="product-info">
+            <h3>Needle Punched Nonwoven Blanket</h3>
+            <p>Cost-effective nonwoven blanket made by needle-punching process. Lightweight, soft, and widely used in hospitals.</p>
+            <a href="products/needle-punched-nonwoven-blanket.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="medical-blankets">
+          <div class="product-image">
+            <img src="assets/images/tissue-filling-blanket.jpg" loading="lazy" alt="Tissue Filling Blanket">
+          </div>
+          <div class="product-info">
+            <h3>Tissue Filling Blanket</h3>
+            <p>Soft and warm blanket with tissue filling. Excellent thermal retention, breathable and hypoallergenic.</p>
+            <a href="products/tissue-filling-blanket.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="medical-blankets">
+          <div class="product-image">
+            <img src="assets/images/polyester-filling-blanket.jpg" loading="lazy" alt="Polyester Filling Blanket">
+          </div>
+          <div class="product-info">
+            <h3>Polyester Filling Blanket</h3>
+            <p>Soft, lightweight, hypoallergenic medical blanket. Ideal for hospitals, nursing homes, and emergency use.</p>
+            <a href="products/polyester-filling-blanket.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="medical-blankets">
+          <div class="product-image">
+            <img src="assets/images/emergency-thermal-blanket.jpg" loading="lazy" alt="Emergency Thermal Blanket">
+          </div>
+          <div class="product-info">
+            <h3>Emergency Thermal Blanket</h3>
+            <p>Compact Mylar emergency blanket for first aid and disaster relief. Retains 90% body heat, waterproof.</p>
+            <a href="products/emergency-thermal-blanket.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- ===== Infection Control ===== -->
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/face-shield.jpg" loading="lazy" alt="Face Shield">
+          </div>
+          <div class="product-info">
+            <h3>Face Shield</h3>
+            <p>Full-face protective shield with elastic headband. Anti-fog, high clarity, adjustable fit for all-day comfort.</p>
+            <a href="products/face-shield.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/face-mask.jpg" loading="lazy" alt="Face Mask">
+          </div>
+          <div class="product-info">
+            <h3>Face Mask</h3>
+            <p>3-ply disposable medical face mask with ear loops. BFE ≥ 95%, comfortable fit for all-day wear.</p>
+            <a href="products/face-mask.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/disposable-bibs.jpg" loading="lazy" alt="Bib">
+          </div>
+          <div class="product-info">
+            <h3>Bib</h3>
+            <p>Disposable PE bib for mealtime protection in hospitals and care homes. Lightweight, waterproof, easy to use.</p>
+            <a href="products/bib.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/bed-pad.jpg" loading="lazy" alt="Bed Pad">
+          </div>
+          <div class="product-info">
+            <h3>Bed Pad</h3>
+            <p>Disposable absorbent bed pad with soft nonwoven top layer. Quick absorption, leak-proof PE backing.</p>
+            <a href="products/bed-pad.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/wash-glove.jpg" loading="lazy" alt="Wash Gloves">
+          </div>
+          <div class="product-info">
+            <h3>Wash Gloves</h3>
+            <p>Disposable wash mitts for patient bathing. Pre-moistened or dry options. Soft texture, thorough cleaning.</p>
+            <a href="products/wash-gloves.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/oral-swab.jpg" loading="lazy" alt="Oral Swab Stick">
+          </div>
+          <div class="product-info">
+            <h3>Oral Swab Stick</h3>
+            <p>Disposable foam oral swab for patient oral care. Gentle on gums, effective cleaning for bedridden patients.</p>
+            <a href="products/oral-swab-stick.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/pe-underpad.jpg" loading="lazy" alt="PE Laminated Underpad">
+          </div>
+          <div class="product-info">
+            <h3>PE Laminated Underpad</h3>
+            <p>Disposable underpad with PE film lamination. Super-absorbent core, leak-proof edges, non-slip backing.</p>
+            <a href="products/pe-laminated-underpad.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/washable-underpad.jpg" loading="lazy" alt="Washable Reusable Underpad">
+          </div>
+          <div class="product-info">
+            <h3>Washable Reusable Underpad</h3>
+            <p>Reusable incontinence underpad with waterproof TPU backing. Washable 300+ times, cost-effective and eco-friendly.</p>
+            <a href="products/washable-reusable-underpad.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/washable-underpad.jpg" loading="lazy" alt="Disposable Underpad">
+          </div>
+          <div class="product-info">
+            <h3>Disposable Underpad</h3>
+            <p>Single-use absorbent underpad with SAP core. Quick liquid absorption, keeps patient dry and comfortable.</p>
+            <a href="products/disposable-underpad.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/disposable-washcloth.jpg" loading="lazy" alt="Disposable Washcloth">
+          </div>
+          <div class="product-info">
+            <h3>Disposable Washcloth</h3>
+            <p>Pre-moistened disposable washcloth for patient hygiene. No-rinse formula, soft and gentle on sensitive skin.</p>
+            <a href="products/disposable-washcloth.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/protective-clothing.jpg" loading="lazy" alt="Protective Clothing">
+          </div>
+          <div class="product-info">
+            <h3>Protective Clothing</h3>
+            <p>Full-body disposable protective suit. SMS material, elastic cuffs, zipper closure. For healthcare and industrial use.</p>
+            <a href="products/protective-clothing.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/isolation-gown.jpg" loading="lazy" alt="Isolation Gown">
+          </div>
+          <div class="product-info">
+            <h3>Isolation Gown</h3>
+            <p>Disposable isolation gown with knitted cuffs. Fluid-resistant, breathable, CE marked. Multiple sizes available.</p>
+            <a href="products/isolation-gown.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/shower-cap.jpg" loading="lazy" alt="Shower Cap">
+          </div>
+          <div class="product-info">
+            <h3>Shower Cap</h3>
+            <p>Disposable nonwoven shower cap for patient use. Elastic band for secure fit, breathable material.</p>
+            <a href="products/shower-cap.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/wash-glove.jpg" loading="lazy" alt="PE Gloves">
+          </div>
+          <div class="product-info">
+            <h3>PE Gloves</h3>
+            <p>Disposable PE gloves for food handling and light-duty tasks. Powder-free, one-size-fits-most, economical.</p>
+            <a href="products/pe-gloves.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/wash-glove.jpg" loading="lazy" alt="Vinyl Gloves">
+          </div>
+          <div class="product-info">
+            <h3>Vinyl Gloves</h3>
+            <p>Disposable vinyl examination gloves. Latex-free, powder-free, ambidextrous. Ideal for non-sterile procedures.</p>
+            <a href="products/vinyl-gloves.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="infection-control">
+          <div class="product-image">
+            <img src="assets/images/cpe-gown.jpg" loading="lazy" alt="CPE Gown">
+          </div>
+          <div class="product-info">
+            <h3>CPE Gown</h3>
+            <p>Disposable CPE isolation gown with knitted cuffs. Extra-durable, waterproof, lightweight. For medical and industrial use.</p>
+            <a href="products/cpe-gown.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- ===== Others ===== -->
+        <div class="product-card" data-category="others">
+          <div class="product-image">
+            <img src="assets/images/apron.jpg" loading="lazy" alt="Apron">
+          </div>
+          <div class="product-info">
+            <h3>Apron</h3>
+            <p>Disposable PE apron for patient care and food service. Waterproof, lightweight, adjustable neck tie.</p>
+            <a href="products/apron.html" class="product-link">Learn More →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No results message -->
+      <div id="noResults" class="text-center" style="display:none; padding: 60px 0;">
+        <p style="font-size: 1.2rem; color: var(--text-light);">No products found in this category.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Can't Find What You're Looking For?</h2>
+      <p>We offer OEM/ODM services. Tell us your requirements and we'll develop it for you.</p>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn btn-white">Request Custom Quote</a>
+        <a href="about.html" class="btn btn-outline">Learn About Our Factory</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo">
+            <img src="assets/images/logo.png" alt="Newrise Medical" style="height:44px;width:auto;">
+          </div>
+          <p>Changzhou Newrise Medical & Hygiene Products Co., Ltd. — Professional manufacturer of disposable medical and healthcare supplies since 2004.</p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Products</h4>
+          <ul class="footer-links">
+            <li><a href="landing-incontinence-care.html">Incontinence Care</a></li>
+            <li><a href="landing-medical-blankets.html">Medical Blankets</a></li>
+            <li><a href="landing-infection-control.html">Infection Control</a></li>
+            <li><a href="landing-patient-transfer.html">Patient Transfer</a></li>
+            <li><a href="landing-oem-odm.html">OEM / ODM</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="icon">📞</span>
+              <div>+86 519 86580890</div>
+            </li>
+            <li>
+              <span class="icon">✉️</span>
+              <div>info@cznewrise.com</div>
+            </li>
+            <li>
+              <span class="icon">👤</span>
+              <div>Rachel — Sales Manager</div>
+            </li>
+            <li>
+              <span class="icon">📍</span>
+              <div>Changzhou, Jiangsu, China</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 Changzhou Newrise Medical & Hygiene Products Co., Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=101"></script>
+  <script>
+    // ========== PRODUCT FILTER ==========
+    (function() {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const productCards = document.querySelectorAll('.product-card');
+      const noResults = document.getElementById('noResults');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Update active button
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+
+          const category = this.getAttribute('data-category');
+          let visibleCount = 0;
+
+          productCards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = '';
+              visibleCount++;
+              // Re-trigger scroll reveal
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(30px)';
+              requestAnimationFrame(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+              });
+            } else {
+              card.style.display = 'none';
+            }
+          });
+
+          // Show/hide no results message
+          noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
