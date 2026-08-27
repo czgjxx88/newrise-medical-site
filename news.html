@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=13">
+  <link rel="stylesheet" href="assets/css/styles.css?v=14">
 </head>
 <body>
 
@@ -40,14 +40,15 @@
           <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
           <div class="nav-dropdown">
-  <a href="products.html" class="nav-dropdown-toggle">Products <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4z"/></svg></a>
-  <div class="dropdown-menu">    <a href="landing-pages/landing-incontinence-care.html">Incontinence Care</a>
-    <a href="landing-pages/landing-medical-blankets.html">Medical Blankets</a>
-    <a href="landing-pages/landing-infection-control.html">Infection Control</a>
-    <a href="landing-pages/landing-patient-transfer.html">Patient Transfer</a>
-    <a href="landing-pages/landing-oem-odm.html">OEM / ODM</a>
-  </div>
-</div>
+            <a href="products.html" class="nav-dropdown-toggle">Products <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4z"/></svg></a>
+            <div class="dropdown-menu">
+              <a href="landing-pages/landing-incontinence-care.html">Incontinence Care</a>
+              <a href="landing-pages/landing-medical-blankets.html">Medical Blankets</a>
+              <a href="landing-pages/landing-infection-control.html">Infection Control</a>
+              <a href="landing-pages/landing-patient-transfer.html">Patient Transfer</a>
+              <a href="landing-pages/landing-oem-odm.html">OEM / ODM</a>
+            </div>
+          </div>
           <a href="news.html" class="active">News</a>
           <a href="faq.html">FAQ</a>
           <a href="contact.html">Contact</a>
@@ -82,12 +83,12 @@
     </div>
   </section>
 
-  <!-- ========== NEWS GRID ========== -->
-  <section class="section">
+  <!-- ========== NEWS GRID (Page 1: 9 articles) ========== -->
+  <section class="section" id="page-1">
     <div class="container">
       <div class="news-grid">
 
-        <!-- Article 1 - NEW -->
+        <!-- Article 1 -->
         <article class="news-card">
           <div class="news-image">
             <img src="assets/images/disposable-washcloth.jpg" alt="Disposable wash gloves" loading="lazy">
@@ -196,27 +197,13 @@
           </div>
         </article>
 
-        <!-- Article 10 -->
-        <article class="news-card">
-          <div class="news-image">
-            <img src="assets/images/banner-3.jpg" alt="News" loading="lazy">
-          </div>
-          <div class="news-content">
-            <div class="news-date">May 10, 2025</div>
-            <h3><a href="#">Global Healthcare Market Trends for 2026</a></h3>
-            <p>Aging populations, rising chronic disease rates, and expanded home care are reshaping the global medical supply market. Here's what manufacturers and buyers should prepare for.</p>
-          </div>
-        </article>
-
       </div>
 
       <!-- ========== PAGINATION ========== -->
-      <nav class="pagination" style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 60px;">
-        <a href="#" class="btn btn-sm" style="background: var(--bg-light); color: var(--text-light); cursor: default; opacity: 0.5; pointer-events: none;">← Prev</a>
-        <a href="#" class="btn btn-sm" style="background: var(--accent); color: #fff; pointer-events: none;">1</a>
-        <a href="#" class="btn btn-sm" style="background: var(--bg-light); color: var(--text-light);">2</a>
-        <a href="#" class="btn btn-sm" style="background: var(--bg-light); color: var(--text-light);">3</a>
-        <a href="#" class="btn btn-sm" style="background: var(--bg-light); color: var(--text-light);">Next →</a>
+      <nav class="pagination" style="display:flex;justify-content:center;align-items:center;gap:8px;margin-top:60px;">
+        <span class="btn btn-sm" style="background:var(--accent);color:#fff;pointer-events:none;">1</span>
+        <a href="news-page-2.html" class="btn btn-sm" style="background:var(--bg-light);color:var(--text-light);">2</a>
+        <a href="news-page-2.html" class="btn btn-sm" style="background:var(--bg-light);color:var(--text-light);">Next →</a>
       </nav>
     </div>
   </section>
@@ -243,7 +230,6 @@
           </div>
           <p>Changzhou Newrise Medical & Hygiene Products Co., Ltd. — Professional manufacturer of disposable medical and healthcare supplies since 2004.</p>
         </div>
-
         <div>
           <h4>Quick Links</h4>
           <ul class="footer-links">
@@ -255,7 +241,6 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-
         <div>
           <h4>Products</h4>
           <ul class="footer-links">
@@ -266,33 +251,17 @@
             <li><a href="landing-pages/landing-oem-odm.html">OEM / ODM</a></li>
           </ul>
         </div>
-
         <div>
           <h4>Contact Us</h4>
           <ul class="footer-contact">
-            <li>
-              <span class="icon">📞</span>
-              <div>+86 519 86580890</div>
-            </li>
-            <li>
-              <span class="icon">✉️</span>
-              <div>info@cznewrise.com</div>
-            </li>
-            <li>
-              <span class="icon">👤</span>
-              <div>Rachel — Sales Manager</div>
-            </li>
-            <li>
-              <span class="icon">📍</span>
-              <div>Changzhou, Jiangsu, China</div>
-            </li>
+            <li><span class="icon">📞</span><div>+86 519 86580890</div></li>
+            <li><span class="icon">✉️</span><div>info@cznewrise.com</div></li>
+            <li><span class="icon">👤</span><div>Rachel — Sales Manager</div></li>
+            <li><span class="icon">📍</span><div>Changzhou, Jiangsu, China</div></li>
           </ul>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        &copy; 2026 Changzhou Newrise Medical & Hygiene Products Co., Ltd. All rights reserved.
-      </div>
+      <div class="footer-bottom">&copy; 2026 Changzhou Newrise Medical & Hygiene Products Co., Ltd. All rights reserved.</div>
     </div>
   </footer>
 
