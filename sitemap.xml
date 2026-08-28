@@ -56,8 +56,68 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.newrisemedical.com/news-page-2.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.newrisemedical.com/news/2026-08-28-pre-soaped-wash-mitts-benefit.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.newrisemedical.com/news/2026-08-27-disposable-wash-gloves-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.newrisemedical.com/news/2026-01-15-production-capacity-expansion.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.newrisemedical.com/news/2025-12-08-incontinence-care-buyers-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.newrisemedical.com/news/2025-11-20-iso-13485-recertification.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.newrisemedical.com/news/2025-10-05-disposable-medical-blankets-demand.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.newrisemedical.com/news/2025-09-12-patient-transfer-safety.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.newrisemedical.com/news/2025-08-28-medica-2025.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.newrisemedical.com/news/2025-07-18-infection-control-products-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.newrisemedical.com/news/2025-06-03-washable-underpad-launch.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.newrisemedical.com/news/2025-05-10-healthcare-market-trends-2026.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.newrisemedical.com/news/2025-04-15-oem-odm-custom-solutions.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
