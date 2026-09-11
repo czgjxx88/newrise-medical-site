@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/styles.css?v=14">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=15">
 </head>
 <body>
 
@@ -63,6 +63,15 @@
         </div>
       </nav>
     </div>
+    <div class="search-overlay" id="searchOverlay" style="display:none;">
+      <div class="search-container">
+        <form class="search-form" action="#" method="get">
+          <input type="search" placeholder="Search products, news, pages..." class="search-input">
+          <button type="submit" class="search-submit">Search</button>
+          <button type="button" class="search-close" id="searchClose">&times;</button>
+        </form>
+      </div>
+    </div>
   </header>
 
   <section class="page-header">
@@ -79,16 +88,51 @@
     <div class="container">
       <div class="news-grid">
 
-<!-- Article 10: displaced from page 1 -->
         <article class="news-card">
           <div class="news-image">
-            <img src="../assets/images/disposable-washcloth.jpg" alt="Disposable wash gloves" loading="lazy">
+            <img src="../assets/images/banner-hero.jpg" alt="Disposable foam sponge oral swabsticks" loading="lazy">
           </div>
           <div class="news-content">
-            <div class="news-date">August 27, 2026</div>
-            <h3><a href="news/2026-08-27-disposable-wash-gloves-guide.html">Complete Guide to Disposable Wash Gloves for Healthcare Facilities</a></h3>
-            <p>A comprehensive buyer's guide covering non-woven, spunlace, airlaid, and pre-moistened wash gloves — helping procurement professionals choose the right material for their facility's needs.</p>
-            <a href="news/2026-08-27-disposable-wash-gloves-guide.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
+            <div class="news-date">September 1, 2026</div>
+            <h3><a href="../news/2026-09-01-oral-swabsticks-comprehensive-guide.html">The Complete Guide to Disposable Foam Sponge Oral Swabs for Healthcare</a></h3>
+            <p>Why disposable foam sponge oral swabsticks are essential for ICU, oncology, and elderly care — how to choose the right oral care swabstick for your clinical environment.</p>
+            <a href="../news/2026-09-01-oral-swabsticks-comprehensive-guide.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-image">
+            <img src="../assets/images/disposable-sheet.jpg" alt="Disposable protective bed sheet" loading="lazy">
+          </div>
+          <div class="news-content">
+            <div class="news-date">August 31, 2026</div>
+            <h3><a href="../news/2026-08-31-disposable-protective-sheet-buyers-guide.html">Disposable Protective Bed Sheets: A Buyer's Guide for Healthcare Facilities</a></h3>
+            <p>How to choose the right disposable bedsheet, drawsheet, and protective sheet for your hospital — balancing infection control, patient comfort, and procurement costs across material types.</p>
+            <a href="../news/2026-08-31-disposable-protective-sheet-buyers-guide.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-image">
+            <img src="../assets/images/commode-liner.jpg" alt="Hygienic bags" loading="lazy">
+          </div>
+          <div class="news-content">
+            <div class="news-date">August 30, 2026</div>
+            <h3><a href="../news/2026-08-30-hygienic-bags-patient-dignity.html">Why Hygienic Bags Are Essential for Patient Dignity and Safety</a></h3>
+            <p>How disposable vomit bags, commode liner bags, and emergency urine bags reduce infection risk, simplify waste management, and protect patient dignity across hospitals, clinics, and home care.</p>
+            <a href="../news/2026-08-30-hygienic-bags-patient-dignity.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-image">
+            <img src="../assets/images/disposable-bibs.jpg" alt="Disposable adult bibs" loading="lazy">
+          </div>
+          <div class="news-content">
+            <div class="news-date">August 29, 2026</div>
+            <h3><a href="../news/2026-08-29-disposable-adult-bibs-infection-control.html">Why Disposable Adult Bibs Are Essential for Infection Control in Healthcare</a></h3>
+            <p>How single-use waterproof bibs with pockets reduce cross-contamination during patient feeding, cut laundering costs, and improve dignity for elderly and dysphagia patients in hospitals and long-term care.</p>
+            <a href="../news/2026-08-29-disposable-adult-bibs-infection-control.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
           </div>
         </article>
 
@@ -98,105 +142,131 @@
           </div>
           <div class="news-content">
             <div class="news-date">August 28, 2026</div>
-            <h3><a href="news/2026-08-28-pre-soaped-wash-mitts-benefit.html">Why Pre-Soaped Wash Mitts Are the Smarter Choice for Healthcare Bathing</a></h3>
+            <h3><a href="../news/2026-08-28-pre-soaped-wash-mitts-benefit.html">Why Pre-Soaped Wash Mitts Are the Smarter Choice for Healthcare Bathing</a></h3>
             <p>How disposable pre-soaped bath washgloves reduce bathing time by up to 50%, lower cross-contamination risk, and improve skin outcomes for patients in hospitals and long-term care.</p>
-            <a href="news/2026-08-28-pre-soaped-wash-mitts-benefit.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
+            <a href="../news/2026-08-28-pre-soaped-wash-mitts-benefit.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
           </div>
         </article>
 
-<!-- Article 11: displaced from page 1 -->
+        <article class="news-card">
+          <div class="news-image">
+            <img src="../assets/images/disposable-washcloth.jpg" alt="Disposable wash gloves" loading="lazy">
+          </div>
+          <div class="news-content">
+            <div class="news-date">August 27, 2026</div>
+            <h3><a href="../news/2026-08-27-disposable-wash-gloves-guide.html">Complete Guide to Disposable Wash Gloves for Healthcare Facilities</a></h3>
+            <p>A comprehensive buyer's guide covering non-woven, spunlace, airlaid, and pre-moistened wash gloves — helping procurement professionals choose the right material for their facility's needs.</p>
+            <a href="../news/2026-08-27-disposable-wash-gloves-guide.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
+          </div>
+        </article>
+
         <article class="news-card">
           <div class="news-image">
             <img src="../assets/images/banner-1.jpg" alt="News" loading="lazy">
           </div>
           <div class="news-content">
             <div class="news-date">January 15, 2026</div>
-            <h3><a href="news/2026-01-15-production-capacity-expansion.html">Newrise Medical Expands Production Capacity in 2026</a></h3>
+            <h3><a href="../news/2026-01-15-production-capacity-expansion.html">Newrise Medical Expands Production Capacity in 2026</a></h3>
             <p>We are adding 10 new automated production lines to our 40,000㎡ Changzhou facility, increasing annual output capacity by 30% to meet growing global demand for disposable medical supplies.</p>
-            <a href="news/2026-01-15-production-capacity-expansion.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
+            <a href="../news/2026-01-15-production-capacity-expansion.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
           </div>
         </article>
 
-<!-- Article 11: displaced from page 1 -->
-        <article class="news-card">
-          <div class="news-image">
-            <img src="../assets/images/about-lab.jpg" alt="News" loading="lazy">
-          </div>
-          <div class="news-content">
-            <div class="news-date">November 20, 2025</div>
-            <h3><a href="news/2025-11-20-iso-13485-recertification.html">Newrise Achieves ISO 13485 Recertification</a></h3>
-            <p>Our quality management system has been successfully recertified to ISO 13485:2016, reaffirming our commitment to the highest standards in medical device manufacturing.</p>
-            <a href="news/2025-11-20-iso-13485-recertification.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
-          </div>
-        </article>
-
-<!-- Article 11: displaced from page 1 -->
         <article class="news-card">
           <div class="news-image">
             <img src="../assets/images/polyester-filling-blanket.jpg" alt="News" loading="lazy">
           </div>
           <div class="news-content">
             <div class="news-date">October 5, 2025</div>
-            <h3><a href="news/2025-10-05-disposable-medical-blankets-demand.html">The Rising Demand for Disposable Medical Blankets</a></h3>
+            <h3><a href="../news/2025-10-05-disposable-medical-blankets-demand.html">The Rising Demand for Disposable Medical Blankets</a></h3>
             <p>Global demand for single-use medical blankets is projected to grow 8% annually. We explore the key drivers behind this trend and how hospitals are benefiting from disposable alternatives.</p>
-            <a href="news/2025-10-05-disposable-medical-blankets-demand.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More →</a>
+            <a href="../news/2025-10-05-disposable-medical-blankets-demand.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
           </div>
         </article>
 
-<!-- Article 11 -->
+        <article class="news-card">
+          <div class="news-image">
+            <img src="../assets/images/about-lab.jpg" alt="News" loading="lazy">
+          </div>
+          <div class="news-content">
+            <div class="news-date">November 20, 2025</div>
+            <h3><a href="../news/2025-11-20-iso-13485-recertification.html">Newrise Achieves ISO 13485 Recertification</a></h3>
+            <p>Our quality management system has been successfully recertified to ISO 13485:2016, reaffirming our commitment to the highest standards in medical device manufacturing.</p>
+            <a href="../news/2025-11-20-iso-13485-recertification.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
+          </div>
+        </article>
+
         <article class="news-card">
           <div class="news-image">
             <img src="../assets/images/patient-transfer-sheet.jpg" alt="News" loading="lazy">
           </div>
           <div class="news-content">
             <div class="news-date">September 12, 2025</div>
-            <h3><a href="news/2025-09-12-patient-transfer-safety.html">Patient Transfer Safety: Best Practices for Healthcare Workers</a></h3>
+            <h3><a href="../news/2025-09-12-patient-transfer-safety.html">Patient Transfer Safety: Best Practices for Healthcare Workers</a></h3>
             <p>Back injuries from patient handling cost the healthcare industry billions annually. Learn how proper transfer sheets and sliding aids can reduce injury risk by up to 60%.</p>
-            <a href="news/2025-09-12-patient-transfer-safety.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More →</a>
+            <a href="../news/2025-09-12-patient-transfer-safety.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
           </div>
         </article>
 
-<!-- Article 12 -->
+        <article class="news-card">
+          <div class="news-image">
+            <img src="../assets/images/banner-3.jpg" alt="News" loading="lazy">
+          </div>
+          <div class="news-content">
+            <div class="news-date">August 28, 2025</div>
+            <h3><a href="../news/2025-08-28-medica-2025.html">Newrise Medical at MEDICA 2025</a></h3>
+            <p>Meet us at MEDICA 2025 in Düsseldorf, Germany. We'll be showcasing our latest incontinence care, infection control, and patient transfer solutions.</p>
+            <a href="../news/2025-08-28-medica-2025.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
+          </div>
+        </article>
+
         <article class="news-card">
           <div class="news-image">
             <img src="../assets/images/washable-underpad.jpg" alt="Washable underpad" loading="lazy">
           </div>
           <div class="news-content">
             <div class="news-date">June 3, 2025</div>
-            <h3><a href="news/2025-06-03-washable-underpad-launch.html">Newrise Launches Eco-Friendly Washable Underpad Line</a></h3>
+            <h3><a href="../news/2025-06-03-washable-underpad-launch.html">Newrise Launches Eco-Friendly Washable Underpad Line</a></h3>
             <p>Our new washable underpad series combines TPU waterproof backing with soft cotton surface, designed for 300+ wash cycles — reducing waste while delivering reliable incontinence protection.</p>
-            <a href="news/2025-06-03-washable-underpad-launch.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More →</a>
+            <a href="../news/2025-06-03-washable-underpad-launch.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
           </div>
         </article>
 
-<!-- Article 13 -->
         <article class="news-card">
           <div class="news-image">
             <img src="../assets/images/face-mask.jpg" alt="News" loading="lazy">
           </div>
           <div class="news-content">
             <div class="news-date">July 18, 2025</div>
-            <h3><a href="news/2025-07-18-infection-control-products-guide.html">How to Choose the Right Infection Control Products</a></h3>
+            <h3><a href="../news/2025-07-18-infection-control-products-guide.html">How to Choose the Right Infection Control Products</a></h3>
             <p>From face masks to barrier drapes, choosing the right infection control products depends on your facility's risk level, regulatory requirements, and budget. Here's a practical guide.</p>
-            <a href="news/2025-07-18-infection-control-products-guide.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More →</a>
+            <a href="../news/2025-07-18-infection-control-products-guide.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
           </div>
         </article>
 
-<!-- Article 14 -->
         <article class="news-card">
           <div class="news-image">
             <img src="../assets/images/banner-3.jpg" alt="News" loading="lazy">
           </div>
           <div class="news-content">
             <div class="news-date">May 10, 2025</div>
-            <h3><a href="news/2025-05-10-healthcare-market-trends-2026.html">Global Healthcare Market Trends for 2026</a></h3>
+            <h3><a href="../news/2025-05-10-healthcare-market-trends-2026.html">Global Healthcare Market Trends for 2026</a></h3>
             <p>Aging populations, rising chronic disease rates, and expanded home care are reshaping the global medical supply market. Here's what manufacturers and buyers should prepare for.</p>
-            <a href="news/2025-05-10-healthcare-market-trends-2026.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More →</a>
+            <a href="../news/2025-05-10-healthcare-market-trends-2026.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
           </div>
         </article>
 
-<!-- Article 15 -->
-        
+        <article class="news-card">
+          <div class="news-image">
+            <img src="../assets/images/banner-1.jpg" alt="News" loading="lazy">
+          </div>
+          <div class="news-content">
+            <div class="news-date">April 15, 2025</div>
+            <h3><a href="../news/2025-04-15-oem-odm-custom-solutions.html">OEM/ODM Custom Solutions: Tailored Medical Products for Your Brand</a></h3>
+            <p>From private label packaging to custom product development, our OEM/ODM services help distributors and healthcare brands bring tailored disposable medical products to market faster.</p>
+            <a href="../news/2025-04-15-oem-odm-custom-solutions.html" class="btn btn-sm btn-primary" style="margin-top:12px;">Read More &rarr;</a>
+          </div>
+        </article>
 
       </div>
 
@@ -264,6 +334,6 @@
     </div>
   </footer>
 
-  <script src="../assets/js/main.js?v=101"></script>
+  <script src="../assets/js/main.js?v=15"></script>
 </body>
 </html>
