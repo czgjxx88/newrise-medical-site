@@ -145,7 +145,9 @@
 
         <div class="contact-form-wrapper">
           <h2 style="margin-bottom:24px;font-size:1.5rem;">Send an Inquiry</h2>
-          <form name="inquiry" method="POST" data-netlify="true" id="contactForm">
+          <form name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+            <!-- Honeypot field for spam prevention - hidden from real users -->
+            <input type="text" name="bot-field" id="bot-field" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
             <div class="form-group">
               <label for="name">Name *</label>
               <input type="text" id="name" name="name" required placeholder="Your full name">
