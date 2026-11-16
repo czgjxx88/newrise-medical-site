@@ -15,12 +15,76 @@ const files = fs.readdirSync(NEWS)
 const totalPages = Math.ceil(files.length / PER_PAGE);
 console.log(`📰 ${files.length} articles → ${totalPages} pages`);
 
+// Map article slugs/titles to product images based on keywords
+const PRODUCT_IMAGE_MAP = [
+  { keys: ['nasogastric','feeding-tube','ng-tube'], img: 'suction-catheter.jpg' },
+  { keys: ['isolation-gown','cpe-gown','surgical-gown'], img: 'isolation-gown.jpg' },
+  { keys: ['iv-cannula','iv-catheter','venous-catheter'], img: 'tourniquets.jpg' },
+  { keys: ['urinary-catheter','foley-catheter','catheter'], img: 'male-urinal-bag.jpg' },
+  { keys: ['wound-dressing','dressing'], img: 'disposable-sheet.jpg' },
+  { keys: ['syringe','needle'], img: 'tourniquets.jpg' },
+  { keys: ['examination-glove','nitrile-glove','vinyl-glove','pe-glove'], img: 'examination-gloves.jpg' },
+  { keys: ['face-mask','surgical-mask'], img: 'face-mask.jpg' },
+  { keys: ['oxygen-mask'], img: 'face-shield.jpg' },
+  { keys: ['tissue-filling-blanket','tissue-blanket'], img: 'tissue-filling-blanket.jpg' },
+  { keys: ['needle-punched','nonwoven-blanket'], img: 'needle-punched-blanket.jpg' },
+  { keys: ['bed-pad','underpad'], img: 'bed-pad.jpg' },
+  { keys: ['washcloth','wash-glove','wash-mitt'], img: 'disposable-washcloth.jpg' },
+  { keys: ['apron','pe-apron'], img: 'apron.jpg' },
+  { keys: ['face-shield','goggles'], img: 'face-shield.jpg' },
+  { keys: ['protective-clothing','coverall','lab-coat'], img: 'protective-clothing.jpg' },
+  { keys: ['bouffant-cap','surgical-cap','shower-cap'], img: 'bouffant-cap.jpg' },
+  { keys: ['bib','patient-bib','adult-bib'], img: 'bib.jpg' },
+  { keys: ['commode-liner','commode'], img: 'commode-liner.jpg' },
+  { keys: ['bedpan-liner'], img: 'bedpan-liner.jpg' },
+  { keys: ['patient-slide-sheet','slide-sheet'], img: 'patient-slide-sheet.jpg' },
+  { keys: ['patient-transfer-sheet','transfer-sheet'], img: 'patient-transfer-sheet.jpg' },
+  { keys: ['oral-swab','foam-sponge'], img: 'oral-swab.jpg' },
+  { keys: ['emergency-thermal-blanket','emergency-blanket'], img: 'emergency-thermal-blanket.jpg' },
+  { keys: ['polyester-filling-blanket','polyester-blanket'], img: 'polyester-filling-blanket.jpg' },
+  { keys: ['medical-blanket','blanket'], img: 'medical-blankets.jpg' },
+  { keys: ['male-urinal','urinal-bag','urine-bag','urinary-drainage'], img: 'male-urinal-bag.jpg' },
+  { keys: ['vomit-bag','emesis'], img: 'vomit-bag.jpg' },
+  { keys: ['pillow-cover','pillow-case'], img: 'pillow-case.jpg' },
+  { keys: ['thermometer-cover'], img: 'disposable-bibs.jpg' },
+  { keys: ['shoe-cover'], img: 'cpe-gown.jpg' },
+  { keys: ['couch-roll','examination-table'], img: 'couch-roll.jpg' },
+  { keys: ['dental-bib','dental-cover'], img: 'dental-cover.jpg' },
+  { keys: ['suction-catheter'], img: 'suction-catheter.jpg' },
+  { keys: ['soap-sponge','pre-soaped'], img: 'soap-sponge.jpg' },
+  { keys: ['washable','reusable-underpad'], img: 'washable-underpad.jpg' },
+  { keys: ['disposable-sheet','protective-bed-sheet'], img: 'disposable-sheet.jpg' },
+  { keys: ['surgical-drape','drapes'], img: 'patient-transfer-nurse.jpg' },
+  { keys: ['pe-laminated','pe-underpad'], img: 'pe-underpad.jpg' },
+  { keys: ['iso','certification','quality'], img: 'about-lab.jpg' },
+  { keys: ['medica','trade-show','exhibition'], img: 'banner-4.jpg' },
+  { keys: ['market-trends','market-forecast'], img: 'banner-3.jpg' },
+  { keys: ['oem','odm','custom'], img: 'banner-2.jpg' },
+  { keys: ['capacity','expansion','production'], img: 'banner-1.jpg' },
+  { keys: ['incontinence','absorbent-mat'], img: 'washable-underpad.jpg' },
+];
+
+function pickProductImage(slug, title) {
+  const combined = (slug + ' ' + title).toLowerCase();
+  for (const entry of PRODUCT_IMAGE_MAP) {
+    for (const key of entry.keys) {
+      if (combined.includes(key)) {
+        return entry.img;
+      }
+    }
+  }
+  return null;
+}
+
 function extractMeta(filename) {
   const html = fs.readFileSync(path.join(NEWS, filename), 'utf8');
   const title = (html.match(/<title>([^<]*)<\/title>/) || [])[1]?.replace(/\s*– Newrise Medical$/, '') || 'Newrise Medical Update';
   const desc = (html.match(/<meta name="description" content="([^"]*)"/) || [])[1] || '';
-  const imgMatch = html.match(/src="([^"]*\.jpg)"/);
-  const img = imgMatch ? path.basename(imgMatch[1]) : 'banner-hero.jpg';
+  let img = pickProductImage(filename, title);
+  if (!img) {
+    const imgMatch = html.match(/src="([^"]*\.jpg)"/);
+    img = imgMatch ? path.basename(imgMatch[1]) : 'banner-hero.jpg';
+  }
   const dateMatch = filename.match(/^(\d{4}-\d{2}-\d{2})/);
   let cardDate = '';
   if (dateMatch) {
